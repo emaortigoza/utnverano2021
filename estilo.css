@@ -1,0 +1,222 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+}
+
+/*main*/
+.maincontent{
+    width: 85vw;
+    margin-left: auto;
+    margin-right: auto;
+}
+/*header*/
+.header{
+    background-color: #3573d6;
+    color: white;
+    height: 80px;
+    margin-bottom: 10px;
+        }
+
+        .logo{
+            text-transform: uppercase;/*texto en mayuscula*/        
+            color: white;
+        }
+            .logo a{
+                color: white;
+                text-decoration: none;
+            }
+
+  /*nav*/          
+        .navbar{
+    background-color: rgb(71, 68, 116);
+    color: white;
+    /*padding: 0.7em;*/
+}
+                                                        /*selectores anidados
+                                                                padre descendiente{
+                                                                    propiedades que solo modifican al hijo
+                                                                }
+                                                                section p{ color:green; }
+                                                                
+                                                                abuelo>padre>hijo{}        
+                                                                section>p{ color:green;}
+                                                                */
+                                                            /* .navbar a{ color:white} */
+
+    /*Menu de Navegacion*/
+        .navbar a{color:white;}
+
+        .navbar ul{
+              list-style: none;
+             text-align: right;
+        /* padding:0; ya esta eliminado por el universal (*{})*/
+                 }
+        .navbar ul li{
+            /*float: left; para menus desplegables*/
+            display: inline-block;/*no util para menus desplegables*/
+        }
+        .navbar ul li a{
+            text-decoration: none;
+            display: block;
+            padding: 10px;
+        }
+        /*pseudo clases*/
+        .navbar ul li a:hover{
+            background-color: white;
+            color: rgb(71, 68, 116);
+        }
+
+        .limpiafloat{clear: both;}
+
+
+        /*modelo de caja
+        el ancho real del elemento = width+padding+border.
+        En html5, con la propiedad "box-sizing: border box; el ancho real es el width*/
+
+#portada{
+    width: 78%;
+    background-color: rgb(77, 75, 82);
+    padding: 1.6em;
+    float: left;
+    box-sizing: border-box;
+        }
+
+        .destacado,.default{
+            background-color: white;
+            padding: 0.7em ;
+            }
+            .destacado{
+            margin-bottom:0.6em ;
+                    }
+
+            .default{
+            
+            float: left;
+            width: 50%;
+            height: 450px;
+            overflow-x: hidden;
+           
+                    }
+                    
+                    
+            .imgNota img{ 
+                width: 100%;
+
+            }
+
+            /*Noticias*/
+
+            .breadcrumb{
+                padding: 0.8em;
+                background-color: rgba(255, 254, 254, 0.322);
+                color: white;
+            }
+            .breadcrumb a{
+                color: white;
+                text-decoration: none;
+            }
+
+            .nota{
+                background-color: white;
+                padding: 1em;
+            }
+
+            .nota .titulos{
+                padding: 0.5em;
+            }
+            .nota .titulos h2{
+                font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+                font-size: 2em; 
+                margin-bottom: 0.5;}
+
+            .nota .titulos h3{
+                font-family: Verdana, Geneva, Tahoma, sans-serif;
+                font-size: 1.5;
+                margin-bottom: 0.5em;}
+
+                .nota .textos{
+                    padding: 1em 0;
+                    margin-bottom: 2em;
+                }
+                .nota .textos p{
+                padding-bottom: 0.6em;
+            }
+
+            .nota figure img{
+                width: 100%;
+            }
+
+            .banner-nota {
+                border: 1px solid grey;
+            }
+            .banner-nota a img{
+                width: 100%;
+            }
+/*Formulario*/
+
+            #formContacto{
+                padding: 1.2em;
+                background-color: rgba(245, 245, 245, 0.363);
+                border-radius: 10px;
+                margin-bottom: 2em;
+                margin-top: 1em;
+            }
+
+            #formContacto input, #fornContacto select, #fornContacto textarea{
+                width: 100%;
+                padding: 0.8em;
+                box-sizing: border-box;
+                margin-bottom: 1em;
+                border-radius: 3px;
+                border: none;
+                font-family: Arial, Helvetica, sans-serif;
+                font-size: 1em;
+            }
+           /* .check{
+                width: 5% !important;/*mala practica*/
+
+            /*}
+            .bt-envio{ width: 5%;
+            }*/
+
+            /*pseudo clases*/
+            #formContacto input:hover{
+                background-color: yellow;
+                color: grey;
+            }
+            #formContacto input:focus{
+                background-color: khaki;
+            }
+            #formContacto input:valid{
+                border: 3px rgb(5, 200, 5) solid;
+            }
+            #formContacto input:invalid{
+                border:3px red solid;
+            }
+
+.sidebar-derecha{
+    width: 20%;
+    background-color: rgb(202, 195, 195);
+    padding: 20px;
+    height: 100px;
+    float: right;
+    box-sizing: border-box;
+
+}
+
+.footer{
+    clear: both;
+    background-color: rgb(117, 209, 245);
+    color: white;
+    text-align: center;
+    padding: 10px;
+    font-size: 0.8em;
+} 
+
+
